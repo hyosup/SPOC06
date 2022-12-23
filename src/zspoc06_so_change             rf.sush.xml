@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SUSH" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <HEAD>
+    <NAME>ZSPOC06_SO_CHANGE</NAME>
+    <TYPE>RF</TYPE>
+    <DISPLAY_NAME>ZSPOC06_SO_CHANGE</DISPLAY_NAME>
+    <STEXT>[SD] SO_CHANGE</STEXT>
+    <MODIFIER>SPOC06</MODIFIER>
+    <MODDATE>2022-12-08</MODDATE>
+    <MODTIME>06:38:47</MODTIME>
+    <SRCSYSTEM>S4H</SRCSYSTEM>
+    <AUTHOR>SPOC06</AUTHOR>
+    <DEVCLASS>ZSPOC06</DEVCLASS>
+   </HEAD>
+   <USOBX>
+    <USOBX>
+     <NAME>ZSPOC06_SO_CHANGE</NAME>
+     <TYPE>RF</TYPE>
+     <OBJECT>S_RFC</OBJECT>
+     <MODIFIER>SPOC06</MODIFIER>
+     <MODDATE>2022-12-08</MODDATE>
+     <MODTIME>06:38:47</MODTIME>
+     <OKFLAG>X</OKFLAG>
+    </USOBX>
+   </USOBX>
+   <USOBX_EXT>
+    <item>
+     <OBJECT>S_RFC</OBJECT>
+     <TTEXT>Authorization Check for RFC Access</TTEXT>
+     <OCLSS>AAAB</OCLSS>
+     <MODIFIER>SPOC06</MODIFIER>
+     <MODDATE>2022-12-08</MODDATE>
+     <MODTIME>06:38:47</MODTIME>
+     <OKFLAG>X</OKFLAG>
+     <DEVCLASS>SRCX</DEVCLASS>
+     <PS_POSID>BC-MID-RFC</PS_POSID>
+     <CI_TEXT>Check</CI_TEXT>
+     <CH_TEXT>Check</CH_TEXT>
+     <PR_TEXT>No</PR_TEXT>
+     <EXCEP>3</EXCEP>
+     <EXCEP_TX>Okay</EXCEP_TX>
+     <EXCEP_ICON>@08@</EXCEP_ICON>
+    </item>
+   </USOBX_EXT>
+  </asx:values>
+ </asx:abap>
+</abapGit>

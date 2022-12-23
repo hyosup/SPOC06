@@ -1,0 +1,177 @@
+@Metadata.layer: #INDUSTRY
+annotate view ZSPOC06_OPEN_SO_LIST_M
+    with 
+{
+    @UI.facet: [
+        {id: 'SOLIST',
+         purpose: #HEADER,
+         type: #IDENTIFICATION_REFERENCE,         
+         position: 10,
+         label: 'Sales Document'},
+         
+        {id: 'Items',
+         purpose: #STANDARD,
+         type: #LINEITEM_REFERENCE,
+         label: 'Itmes',
+         targetElement: '_Items',
+         position: 20},
+        
+        {id: 'Status',
+         purpose: #STANDARD,
+         type: #IDENTIFICATION_REFERENCE,
+         label: 'Status',
+         targetElement: '_Status',
+         position: 30},
+         
+         {id: 'Credit',
+         purpose: #STANDARD,
+         type: #IDENTIFICATION_REFERENCE,
+         label: 'Credit',
+         targetElement: '_CreditAmt',
+         position: 40}
+    ]
+    
+    @UI:{
+    lineItem:[{position:30, label: 'Sales Order Number', importance: #HIGH},
+        {type: #FOR_ACTION, dataAction:'rePricing', label: 'Re-Pricing', position: 10},
+        {type: #FOR_ACTION, dataAction:'rejectAll', label: 'Reject All', position: 20}] , 
+    identification: [{position:10, label: 'Sales Oder Number'},
+        {type: #FOR_ACTION, dataAction:'rePricing', label: 'Re-Pricing', position: 10},
+        {type: #FOR_ACTION, dataAction:'rejectAll', label: 'Reject All', position: 20}],    
+//    selectionField: [{position:130}] }
+    selectionField: [{position:130}] }
+    SalesOrderNumber; 
+    
+    @UI:{
+    lineItem:[{position:130, label: 'Sold-to Party'}],
+    identification: [{position:90, label: 'Sold-to Party'}],
+    selectionField: [{position:70}] }
+    SoldToParty;
+    
+    @UI:{
+    lineItem:[{position:20, label: 'Order Type'}],
+    identification: [{position:20, label: 'Order Type'}],
+    selectionField: [{position:10}] }  
+    OrderType;
+    
+    @UI:{
+    lineItem:[{position:10, label: 'Create Date'}],
+    identification: [{position:30, label: 'Create Date'}],
+    selectionField: [{position:90}] }
+    CreateDate;
+    
+    @UI:{
+    lineItem:[{position:40, label: 'Sales Organization'}],
+    identification: [{position:40, label: 'Sales Organization'}],
+    selectionField: [{position:20}] }   
+    SalesOrganization;
+    
+    @UI:{
+    lineItem:[{position:50, label: 'Dustribution Channel'}],
+    identification: [{position:50, label: 'Dustribution Channel'}],
+    selectionField: [{position:30}] }
+    DistChannel;
+    
+    @UI:{
+    lineItem:[{position:60, label: 'Division'}],
+    identification: [{position:60, label: 'Division'}],
+    selectionField: [{position:40}] }
+    Division;
+    
+    @UI:{
+    lineItem:[{position:70, label: 'Sales Office'}],
+    identification: [{position:70, label: 'Sales Office'}],
+    selectionField: [{position:50}] }
+    SalesOffice;
+    
+    @UI:{
+    lineItem:[{position:80, label: 'Sales Group'}],
+    identification: [{position:80, label: 'Sales Group'}],
+    selectionField: [{position:60}] }
+    SalesGroup;
+    
+    @UI:{
+    lineItem:[{position:150, label: 'Risk category'}],
+    identification: [{position:110, label: 'Risk category'}],
+    selectionField: [{position:80}] }
+    RiskCategory;
+    
+    @UI:{
+    lineItem:[{position:160, label: 'Doc. Currency'}],
+    identification: [{position:21, label: 'Doc. Currency'}]}
+    DocCurrency;
+    
+    @UI:{
+    lineItem:[{position:120, label: 'Created By'}],
+    identification: [{position:120, label: 'Created By'}]}    
+    CreatedBy;
+    
+    @UI:{
+    lineItem:[{position:140, label: 'Credit Account'}],
+    identification: [{position:100, label: 'Credit Account'}]}
+    CreditAcct;
+    
+    
+//    CreditArea;
+//    BusinessPartner;
+//    
+//    CustomerName;
+    @UI:{
+    lineItem: [{position:90, label: 'Rejection Status(all)'}],
+    identification: [{position:90, label: 'Rejection Status(all)'}],
+    selectionField: [{position: 100}]}
+    RejectionStatus;
+    
+    @UI:{
+    lineItem: [{position:100, label: 'Status of Static check'}],
+    identification: [{position:100, label: 'Status of Static check'}],
+    selectionField: [{position: 110}]}
+    StatusOfStatic;
+    
+    @UI:{
+    lineItem: [{position:110, label: 'Delivery status'}],
+    identification: [{position: 110, label: 'Delivery status'}],
+    selectionField: [{position: 120}]}
+    DeliverStatus;
+//
+//    Credit_Limit;
+//
+//    
+//    CreditLimitCurky;
+//    
+//    CreditItemAmtCurky;
+    @UI:{
+    lineItem: [{position:300, label: 'Value (Inc. Tax)'}],
+    identification: [{position: 300, label: 'Value (Inc. Tax)'}]}
+    value;
+    
+    @UI:{
+    lineItem: [{position:310, label: 'Credit Currency'}],
+    identification: [{position: 310, label: 'Value (Inc. Tax)'}]}
+    Credit_Limit_curky;
+    
+    @UI:{
+    lineItem: [{position:320, label: 'Credit Limit'}],
+    identification: [{position: 320, label: 'Credit Limit'}]}
+    Credit_Limit;
+    
+    @UI:{
+    lineItem: [{position:320, label: 'Credit Exposure'}],
+    identification: [{position: 320, label: 'Credit Exposure'}]}    
+    Credit_Exposure;
+    
+    @UI:{
+    lineItem: [{position:330, label: 'Total Receivables'}],
+    identification: [{position: 330, label: 'Total Receivables'}]}
+    Tot_Receivable;
+    
+    @UI:{
+    lineItem: [{position:320, label: 'Open Order'}],
+    identification: [{position: 320, label: 'Open Order'}]}
+    Open_Order;
+    
+    @UI:{
+    lineItem: [{position:320, label: 'Open Delivery'}],
+    identification: [{position: 320, label: 'Open Delivery'}]}    
+    Open_Delivery; 
+}

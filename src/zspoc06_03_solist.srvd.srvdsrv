@@ -1,0 +1,8 @@
+@EndUserText.label: 'Open Sales Order List'
+define service ZSPOC06_03_SOLIST {
+  expose ZSPOC06_OPEN_SO_LIST_M as SalesList;
+  expose ZSPOC06_SO_ITEM as Items;
+  expose ZSPOC06_SO_STATUS as Status;
+  expose ZSPOC06_CREDIT_AMOUNT as Credit;
+  expose ZPOC06_VH_RejectReason;
+}

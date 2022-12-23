@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SICF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <URL>/sap/bc/ui5_ui5/sap/zspoc06_03/</URL>
+   <ICFSERVICE>
+    <ICF_NAME>ZSPOC06_03</ICF_NAME>
+    <APPLCUSTFLAG>1</APPLCUSTFLAG>
+    <ORIG_NAME>zspoc06_03</ORIG_NAME>
+   </ICFSERVICE>
+   <ICFDOCU>
+    <ICF_NAME>ZSPOC06_03</ICF_NAME>
+    <ICF_LANGU>E</ICF_LANGU>
+    <ICF_DOCU>Fiori Element 03</ICF_DOCU>
+   </ICFDOCU>
+  </asx:values>
+ </asx:abap>
+</abapGit>

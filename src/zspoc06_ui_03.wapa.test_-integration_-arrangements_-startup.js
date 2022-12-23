@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/test/Opa5"],function(t){"use strict";return t.extend("zspoc06.test.integration.arrangements.Startup",{iStartMyApp:function(t){var a=t||{};a.delay=a.delay||50;this.iStartMyUIComponent({componentConfig:{name:"zspoc06",async:true},has+
+h:a.hash,autoWait:a.autoWait})}})});                                                                                                                                                                                                                           

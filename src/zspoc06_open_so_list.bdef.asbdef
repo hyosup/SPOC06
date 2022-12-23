@@ -1,0 +1,46 @@
+unmanaged implementation in class zbp_spoc06_open_so_list unique;
+//strict; //Comment this line in to enable strict mode. The strict mode is prerequisite to be future proof regarding syntax and to be able to release your BO.
+
+define behavior for ZSPOC06_OPEN_SO_LIST alias SOLIST
+implementation in class zcl_bp_spoc06_open_so_list unique
+//late numbering
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+  action rePricing parameter ZSPOC06_PARAM_REPRICE; // result [1] $self;
+  action rejectAll parameter ZSPOC06_PARAM_REJECT;  // result [1] $self;
+
+  association _Items {  }
+  association _Status {  }
+}
+
+define behavior for ZSPOC06_SO_ITEM alias items//alias <alias_name>
+implementation in class zcl_bp_spoc06_open_so_item unique
+//late numbering
+//lock dependent by _parent
+//authorization dependent by SOLIST
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly ) vbeln;
+  association _parent;
+
+}
+//
+//define behavior for ZSPOC06_SO_STATUS //alias <alias_name>
+////late numbering
+//lock dependent by _SoLIst
+//authorization dependent by _SoLIst
+////etag master <field_name>
+//{
+//  update;
+//  delete;
+//  field ( readonly ) SalesOrder;
+//  association _SoLIst;
+//}

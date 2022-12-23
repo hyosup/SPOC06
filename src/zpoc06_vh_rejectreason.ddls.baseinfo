@@ -1,0 +1,17 @@
+{
+"BASEINFO":
+{
+"FROM":
+[
+"ZPOC06_I_REJECTREASON"
+],
+"ASSOCIATED":
+[],
+"BASE":
+[],
+"ANNO_REF":
+[],
+"VERSION":0,
+"ANNOREF_EVALUATION_ERROR":""
+}
+}

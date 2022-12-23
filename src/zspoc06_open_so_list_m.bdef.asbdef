@@ -1,0 +1,10 @@
+projection;
+//strict; //Comment this line in to enable strict mode. The strict mode is prerequisite to be future proof regarding syntax and to be able to release your BO.
+
+define behavior for ZSPOC06_OPEN_SO_LIST_M //alias <alias_name>
+{
+
+  use action rePricing;
+  use action rejectAll;
+
+}

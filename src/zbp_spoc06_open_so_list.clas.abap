@@ -1,0 +1,5 @@
+CLASS zbp_spoc06_open_so_list DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zspoc06_open_so_list.
+ENDCLASS.
+
+CLASS zbp_spoc06_open_so_list IMPLEMENTATION.
+ENDCLASS.

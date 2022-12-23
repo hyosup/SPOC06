@@ -1,0 +1,1 @@
+sap.ui.define(["ui5demo/controller/View1.controller"],function(e){"use strict";QUnit.module("View1 Controller");QUnit.test("I should test the View1 controller",function(t){var o=new e;o.onInit();t.ok(o)})});                                                
